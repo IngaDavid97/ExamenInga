@@ -65,6 +65,7 @@ public class EmpleadoController {
                 
                 empleado.setFecha_nacimiento(u.getFecha_nacimiento());
                 
+                empleado.setDias_trabajo(u.getDias_trabajo());
                 
                 
                 return new ResponseEntity<>(empleadoService.save(empleado), HttpStatus.CREATED);

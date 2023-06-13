@@ -29,20 +29,20 @@ public class EmpleadoServiceImpl extends GenericServiceImpl<Empleado, Integer> i
     }
     
     
-     public void calcularSueldo(int diasTrabajados) {
-        BigDecimal sueldoBase = new BigDecimal(diasTrabajados * 15); // Día de trabajo cuesta $15
-        BigDecimal bono = BigDecimal.ZERO;
-
-        if (diasTrabajados >= 20) {
-            bono = sueldoBase.multiply(new BigDecimal("0.02")); // Bono del 2%
-        }
-
-        if (diasTrabajados >= 30) {
-            bono = sueldoBase.multiply(new BigDecimal("0.05")); // Bono del 5%
-        }
-
-      //  this.sueldo = sueldoBase.add(bono);
-    }
+//     public void calcularSueldo(int diasTrabajados) {
+//        BigDecimal sueldoBase = new BigDecimal(diasTrabajados * 15); // Día de trabajo cuesta $15
+//        BigDecimal bono = BigDecimal.ZERO;
+//
+//        if (diasTrabajados >= 20) {
+//            bono = sueldoBase.multiply(new BigDecimal("0.02")); // Bono del 2%
+//        }
+//
+//        if (diasTrabajados >= 30) {
+//            bono = sueldoBase.multiply(new BigDecimal("0.05")); // Bono del 5%
+//        }
+//
+//      //  this.sueldo = sueldoBase.add(bono);
+//    }
      
 
 
